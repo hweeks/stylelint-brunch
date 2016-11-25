@@ -20,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/mirko-lelansky/stylelint-brunch/issues"
   },
-  "homepage": "https://github.com/mirko-lelansky/stylelint-brunch#readme"
+  "homepage": "https://github.com/mirko-lelansky/stylelint-brunch#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.10.2",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "stylelint": "^7.6.0"
+  }
 }
