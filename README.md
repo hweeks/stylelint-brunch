@@ -19,4 +19,4 @@ config = {
 
 # License #
 
-Licensed under the [Apache-2.0 license](https://github.com/mirko-lelansky/stylelint-brunch/LICENSE).
+Licensed under the [Apache-2.0 license](https://github.com/mirko-lelansky/stylelint-brunch/blob/master/LICENSE).
