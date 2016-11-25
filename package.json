@@ -1,0 +1,24 @@
+{
+  "name": "stylelint-brunch",
+  "version": "0.0.1",
+  "description": "Adds stylelint support to brunch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirko-lelansky/stylelint-brunch.git"
+  },
+  "keywords": [
+    "bruch",
+    "brunch-plugin",
+    "stylelint"
+  ],
+  "author": "Mirko Lelansky <mlelansky@mail.de>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/mirko-lelansky/stylelint-brunch/issues"
+  },
+  "homepage": "https://github.com/mirko-lelansky/stylelint-brunch#readme"
+}
