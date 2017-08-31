@@ -11,6 +11,8 @@ Install the plugin via npm:
 
 There is no needed configuration. If you install this package it will attempt the standard lookup for a style-lint file and lint all css files. This assumes you have CSS files and want to use your system lint configuration.
 
+### pattern
+
 For SASS, you can use this configuration:
 
 ```javascript
@@ -21,15 +23,45 @@ config = {
 }
 ```
 
-The `pattern` parameter is evaluated in a `new RegExp()` call. Change the pattern to match your desired file type.
+The `pattern` parameter is evaluated in a `new RegExp()` call if it's a string. Change the pattern to match your desired file type.
 
-## auto configuration
+### warnOnly
 
-There are a few things I'm doing here to hopefully make this easier to use.
+Passing a warnOnly key allows you to prevent errors from being thrown. This defaults to true.
 
-  1. attempt to figure out the file syntax
-  1. only add the configuration you pass up if there is a rules key
-  1. have the formatter set to string, there is no override for this
+```javascript
+config = {
+  stylelint: {
+    warnOnly: false
+  }
+}
+```
+
+### formatter
+
+Passing a formatter key allows you to select your preferred formatter. This defaults to `string`.
+
+```javascript
+config = {
+  stylelint: {
+    formatter: 'json'
+  }
+}
+```
+
+### config
+
+Passing any valid stylelint options here are supported and override ad you'd expect.
+
+```javascript
+config = {
+  stylelint: {
+    config: {
+      // whatever you want to pass that's valid stylelint options.
+    }
+  }
+}
+```
 
 ## license
 
