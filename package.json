@@ -1,10 +1,11 @@
 {
   "name": "stylelint-brunch",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Adds stylelint support to brunch.",
   "main": "index.js",
   "scripts": {
-    "test": "eslint index.js"
+    "test": "eslint index.js",
+    "ci": "$(npm bin)/eslint index.js"
   },
   "repository": {
     "type": "git",
