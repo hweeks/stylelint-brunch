@@ -5,6 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "eslint src/",
+    "nyc": "$(npm bin)/nyc npm run mocha",
+    "mocha": "$(npm bin)/mocha src/",
     "ci": "$(npm bin)/eslint src/"
   },
   "repository": {
@@ -25,7 +27,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "eslint": "^3.10.2",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "nyc": "~11.1.0"
   },
   "dependencies": {
     "stylelint": "^7.6.0"

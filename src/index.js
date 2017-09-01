@@ -15,7 +15,7 @@ class StyleLinter {
         if (result.output) {
           console.log(result.output);
         }
-        if (!(this.parser.warnOnly() || !result.errored)) {
+        if (!(this.parser.options.warnOnly || !result.errored)) {
           throw new Error(
             'Oh no! You\'ve got some real stylelint issues here.'
           );

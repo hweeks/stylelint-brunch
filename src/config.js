@@ -7,10 +7,9 @@ module.exports = class OptionsParser {
     this.options.warnOnly = this.options.warnOnly !== false;
     if (!this.options.pattern) {
       this.options.pattern = /^app[\/\\].*\.css?$/;
+    } else {
+      this.getPattern();
     }
-  }
-  warnOnly() {
-    return this.options.warnOnly;
   }
   getPattern() {
     if (typeof this.options.pattern === 'string') {
