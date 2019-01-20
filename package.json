@@ -28,6 +28,6 @@
     "mocha": "^3.2.0"
   },
   "dependencies": {
-    "stylelint": "^7.6.0"
+    "stylelint": "^9.9.0"
   }
 }
